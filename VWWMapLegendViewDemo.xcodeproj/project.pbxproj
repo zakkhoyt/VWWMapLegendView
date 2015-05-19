@@ -14,6 +14,8 @@
 		CFF7201E1B0B096300CDE233 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF7201D1B0B096300CDE233 /* Images.xcassets */; };
 		CFF720211B0B096300CDE233 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFF7201F1B0B096300CDE233 /* LaunchScreen.xib */; };
 		CFF7202D1B0B096300CDE233 /* VWWMapLegendViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF7202C1B0B096300CDE233 /* VWWMapLegendViewDemoTests.m */; };
+		CFF720381B0B097E00CDE233 /* VWWMapLegendView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF720371B0B097E00CDE233 /* VWWMapLegendView.m */; };
+		CFF7203B1B0B0ADE00CDE233 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF7203A1B0B0ADE00CDE233 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		CFF720261B0B096300CDE233 /* VWWMapLegendViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VWWMapLegendViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF7202B1B0B096300CDE233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFF7202C1B0B096300CDE233 /* VWWMapLegendViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWWMapLegendViewDemoTests.m; sourceTree = "<group>"; };
+		CFF720361B0B097E00CDE233 /* VWWMapLegendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWMapLegendView.h; sourceTree = "<group>"; };
+		CFF720371B0B097E00CDE233 /* VWWMapLegendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWMapLegendView.m; sourceTree = "<group>"; };
+		CFF7203A1B0B0ADE00CDE233 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF7203B1B0B0ADE00CDE233 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		CFF720041B0B096300CDE233 = {
 			isa = PBXGroup;
 			children = (
+				CFF7203A1B0B0ADE00CDE233 /* MapKit.framework */,
 				CFF7200F1B0B096300CDE233 /* VWWMapLegendViewDemo */,
 				CFF720291B0B096300CDE233 /* VWWMapLegendViewDemoTests */,
 				CFF7200E1B0B096300CDE233 /* Products */,
@@ -89,6 +96,7 @@
 				CFF7201D1B0B096300CDE233 /* Images.xcassets */,
 				CFF7201F1B0B096300CDE233 /* LaunchScreen.xib */,
 				CFF720101B0B096300CDE233 /* Supporting Files */,
+				CFF720391B0B098200CDE233 /* VWWMapLegendView */,
 			);
 			path = VWWMapLegendViewDemo;
 			sourceTree = "<group>";
@@ -117,6 +125,15 @@
 				CFF7202B1B0B096300CDE233 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFF720391B0B098200CDE233 /* VWWMapLegendView */ = {
+			isa = PBXGroup;
+			children = (
+				CFF720361B0B097E00CDE233 /* VWWMapLegendView.h */,
+				CFF720371B0B097E00CDE233 /* VWWMapLegendView.m */,
+			);
+			name = VWWMapLegendView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF720191B0B096300CDE233 /* ViewController.m in Sources */,
+				CFF720381B0B097E00CDE233 /* VWWMapLegendView.m in Sources */,
 				CFF720161B0B096300CDE233 /* AppDelegate.m in Sources */,
 				CFF720131B0B096300CDE233 /* main.m in Sources */,
 			);
